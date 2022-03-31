@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Borodinski Barbershop | Главная</title>
+</head>
+<body>
+<header class="header">
+    <div class="header__container container grid">
+        <nav class="header__nav nav">
+            <ul class="nav__list list-reset">
+                <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+                <li class="nav__item"><a href="./catalog.html" class="nav__link">Каталог</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Частые вопросы</a></li>
+            </ul>
+        </nav>
+        <ul class="header__controls controls list-reset">
+            <button class="btn-reset" aria-label="Поиск по сайту"><img width="16" height="16" src="./img/svg/search.svg"
+                                                                       alt="Иконка поиска"></button>
+            <button class="btn-reset" aria-label="Корзина товаров"><img width="16" height="16" src="./img/svg/cart.svg"
+                                                                        alt="Иконка корзины"></button>
+            <a href="./login.html" class="btn-reset controls__login"><img width="16" height="16"
+                                                                          src="./img/svg/login.svg"
+                                                                          alt="Иконка вход на сайт"><span>Вход</span></a>
+        </ul>
+    </div>
+</header>
+<main class="main main-index">
+    <section class="main-index__hero hero">
+        <div class="hero__logo">
+            <img src="./img/svg/logo.svg" alt="Логотип барбершоп Borodinski" width="367" height="152">
+        </div>
+        <div class="hero__container container">
+            <ul class="hero__list list-reset">
+                <li class="hero__item">
+                    <h3>Быстро</h3>
+                    <p>Мы делаем свою работу быстро! Два часа пролетят незаметно, и вы — счастливый обладатель стильной
+                        стрижки-минутки!</p>
+                </li>
+                <li class="hero__item">
+                    <h3>Круто</h3>
+                    <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае
+                        внешне.</p>
+                </li>
+                <li class="hero__item">
+                    <h3>Дорого</h3>
+                    <p>Наши мастера — профессионалы своего дела и не могут стоить дешево. к тому же, разве цена не даёт
+                        определённый статус?</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="services">
+        <div class="services__container container">
+            <div class="services__wrapper">
+                <div class="services__col">
+                    <h3>Популярные услуги</h3>
+                    <ul class="services__popular popular">
+                        <li class="popular__item">
+                            <h4>Стрижка машинкой</h4>
+                            <span></span>
+                            <p>800 ₽</p>
+                        </li>
+                        <li class="popular__item">
+                            <h4>Стрижка усов</h4>
+                            <span></span>
+                            <p>1200 ₽</p>
+                        </li>
+                        <li class="popular__item">
+                            <h4>Груминг</h4>
+                            <span></span>
+                            <p>400 ₽</p>
+                        </li>
+                        <li class="popular__item">
+                            <h4>Комплексная стрижка</h4>
+                            <span></span>
+                            <p>2300 ₽</p>
+                        </li>
+                    </ul>
+                    <a href="#">Посмотреть все</a>
+                </div>
+                <div class="services__col">
+                    <h3>Фотогалерея</h3>
+                    <div class="services__carousel carousel">
+                        <ul class="carousel__list">
+                            <li class="list__item">
+                                <picture>
+                                    <source>
+                                    <img src="./img/carousel-0.jpg" alt="Стрижка" width="390" height="250">
+                                </picture>
+                            </li>
+                        </ul>
+                        <div class="carousel__controls">
+                            <button aria-label="Следующий слайд" class="carousel__btn carousel__btn_next"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>
