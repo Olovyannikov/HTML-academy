@@ -271,11 +271,23 @@ ul.services__popular {
 
 .popular__item {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
     font-weight: 700;
     font-size: 20px;
     line-height: 140%;
+    gap: 16px;
+}
+
+.popular__item::before {
+    content: "";
+    border-bottom: 2px dotted rgba(89, 89, 89, 0.5);
+    flex-grow: 1;
+    order: 2;
+}
+
+.popular__item h4 {
+    order: 1;
 }
 
 .popular__item h4,
@@ -287,6 +299,7 @@ ul.services__popular {
 
 .popular__item p {
     color: #AF7842;
+    order: 3;
 }
 
 .popular__item span {
