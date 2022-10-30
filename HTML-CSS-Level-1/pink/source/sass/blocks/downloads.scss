@@ -1,0 +1,109 @@
+.downloads {
+  order: 2;
+  flex-wrap: wrap;
+  max-width: 300px;
+  z-index: 1;
+  margin: 500px auto 0;
+}
+
+.downloads__link {
+  max-width: 280px;
+  width: 280px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto 30px;
+
+  color: white;
+  text-decoration: none;
+
+  border: 3px solid white;
+  border-radius: 50px;
+
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 35px;
+  transition: .2s;
+  z-index: 1;
+  &:hover {
+    background-color: white;
+    color: #c42a55;
+    box-shadow: 0 5px 5px black;
+  }
+}
+
+.downloads__devices {
+  list-style: none;
+  display: flex;
+  width: 278px;
+  padding: 0;
+  margin: 30px auto;
+  justify-content: space-around;
+  z-index: 1;
+}
+
+.downloads__devices-link {
+  width: 47px;
+  height: 56px;
+  display: block;
+  background: url("../img/apple-logo.svg") center no-repeat;
+  transition: .2s;
+  &--android {
+    background-image: url("../img/android-logo.svg");
+  }
+  &--windows {
+    background-image: url("../img/microsoft-logo.svg");
+  }
+}
+
+.downloads__description {
+  color: white;
+  text-align: center;
+  width: 320px;
+  margin: 0 auto 30px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.downloads__caption {
+  color: white;
+  text-align: center;
+  width: 100%;
+  font-size: 48px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: 300;
+  margin: 0 0 35px;
+  line-height: 52px;
+}
+
+@media (min-width: 660px) {
+  .downloads {
+    order: 0;
+    width: 300px;
+    margin: 200px 0 0;
+    display: flex;
+  }
+
+  .downloads__link {
+    max-width: 300px;
+    width: 300px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .downloads {
+    margin-top: 110px;
+  }
+  .downloads__caption {
+    line-height: 1.3;
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 660px) {
+  .downloads__caption {
+    display: none;
+  }
+}

@@ -1,0 +1,65 @@
+.price {
+  background-color: #f2f2f2;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.price__wrapper {
+  background-color: #f2f2f2;
+}
+
+.price__indicators {
+  display: none;
+}
+
+
+
+/* стили для индикаторов */
+@media (max-width: 659px) {
+
+  .price__indicators {
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    list-style: none;
+    margin: 0 15%;
+  }
+
+  .price__indicators li {
+    width: 6px;
+    height: 6px;
+    margin-right: 3px;
+    margin-left: 3px;
+    cursor: pointer;
+    background-color: #bec2c7;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 3px solid white;
+  }
+
+  .price__indicators li.active {
+    width: 5px;
+    height: 5px;
+    background-color: #FFF;
+    border: 3px solid #283645;
+  }
+
+  .price__wrapper-background {
+    height: 50%;
+  }
+}
+
+@media (min-width: 660px) {
+  .price {
+    padding-bottom: 74px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .price {
+    padding-bottom: 96px;
+  }
+}
